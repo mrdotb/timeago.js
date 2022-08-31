@@ -34,4 +34,17 @@ module.exports = [
       uglify(),
     ],
   },
+  {
+    input: 'src/short.ts',
+    output: {
+      file: 'dist/timeago.short.min.js',
+      name: 'timeago',
+      format: 'umd',
+    },
+    plugins: [
+      resolve(),
+      typescript(),
+      uglify(),
+    ],
+  }
 ];
